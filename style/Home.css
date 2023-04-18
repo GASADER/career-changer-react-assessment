@@ -11,12 +11,12 @@ section
     justify-content: center;
 
 }
-.buttonRole 
+.btn-role 
 {
     display: flex;
     gap: 4rem;
 }
-.buttonRole button
+.btn-role button
 {
     font-size: large;
     border-radius: 5px;

@@ -1,0 +1,14 @@
+.owner-container
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+.img-container
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}

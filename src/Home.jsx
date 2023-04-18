@@ -6,6 +6,7 @@ import './components/Navber.css'
 import '../style/Home.css'
 import { DataContext } from "./util/Context";
 
+// add mockupdata
 const mockEmployees = [
   {
     id: 0,
@@ -24,39 +25,47 @@ const mockEmployees = [
     name: "employee 2",
     lastname: "lord",
     position: "Designer",
-  },
+  }
 ];
 
 const Home = () => {
-  const [sector, setSector] = useState();
+
+  // state for role content
+  const [sector, setSector] = useState(null);
+
+  // state for data
   const [employees, setEmployees] = useState(mockEmployees);
 
+  //
   const role = (value) => {
     setSector(value);
   };
 
+  //set variable for change content
   let info;
-  let content;
+  let content;  
 
   if (sector === "admin") {
     content = <Admin />;
     info = <h1>Generation Thailand <br/> Home - Admin Sector</h1>
-
-  } else if (sector === "user") {
+  } 
+  else if (sector === "user") {
     content = <User />;
     info = <h1>Generation Thailand <br/> Home - User Sector</h1>
-
-  } else {
+  } 
+  else {
     info = <h1>Generation Thailand <br/> React - Assessment</h1>;
-  }
+  } 
+
   return (
+    //send data state to other component
     <DataContext.Provider value={{employees, setEmployees}}>
       <Navbar/>
       <section>
       {info}
-      <div className="buttonRole">
-        <button onClick={() => role("admin")}>Admin Home Sector</button>
+      <div className="btn-role">
         <button onClick={() => role("user")}>User Home Sector</button>
+        <button onClick={() => role("admin")}>Admin Home Sector</button>
       </div>
       {content}
       </section>

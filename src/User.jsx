@@ -3,8 +3,9 @@ import React from "react";
 import { DataContext } from "./util/Context";
 
 const User = () => {
+  //set variable from Context
   const {employees} = useContext(DataContext)
-
+    
   return (
     <div>
       <table>
@@ -16,6 +17,7 @@ const User = () => {
         </tr>
         </thead>
         <tbody>
+        {/* map employees variable(mockEmployees) to object */}
         {employees.map((list) => {
           return (
             <tr key={list.id}>
@@ -32,3 +34,4 @@ const User = () => {
 };
 
 export default User;
+
