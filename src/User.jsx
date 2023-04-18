@@ -8,12 +8,14 @@ const User = () => {
   return (
     <div>
       <table>
+      <thead>
         <tr>
-          <th>ID</th>
           <th>Name</th>
           <th>Last name</th>
           <th>Organization</th>
         </tr>
+        </thead>
+        <tbody>
         {employees.map((list) => {
           return (
             <tr key={list.id}>
@@ -23,6 +25,7 @@ const User = () => {
             </tr>
           );
         })}
+        </tbody>
       </table>
     </div>
   );
