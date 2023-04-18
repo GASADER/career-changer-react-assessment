@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import Admin from "./Admin";
 import User from "./User";
-import Layout from "./components/Layout";
+import Navbar from "./components/navber";
 
 const mockEmployees = [
   {
@@ -22,50 +22,32 @@ const mockEmployees = [
     lastname: "lord",
     position: "Designer",
   },
-  {
-    id: 3,
-    name: "employee 2",
-    lastname: "lord",
-    position: "Designer",
-    role: "admin"
-  },
-  {
-    id: 4,
-    name: "employee 2",
-    lastname: "lord",
-    position: "Designer",
-    role: "user"
-  },
 ];
 
-// const [Sector,setSector] = useState(null)
-// const [Employees,setEmployees] = useState(null)
-// const changeRole = () =>{
-//   setSector('admin')
-// }
-
 const Home = () => {
-  const role = mockEmployees[4].role;
+  const [Sector, setSector] = useState();
 
-  if (role === "admin") {
-    return (
-      <Layout>
-        <Admin />
-      </Layout>
-    );
-  } else if (role === "user") {
-    return (
-      <Layout>
-        <User />
-      </Layout>
-    );
+  const role = (value) => {
+    setSector(value);
+  };
+
+  let content;
+
+  if (Sector === "admin") {
+    content = <Admin />;
+  } else if (Sector === "user") {
+    content = <User />;
   } else {
-    return (
-      <Layout>
-        <h1>Generation Thailand React - Assessment</h1>
-      </Layout>
-    );
+    content = <h1>Generation Thailand React - Assessment</h1>;
   }
+  return (
+    <div>
+      <Navbar/>
+      {content}
+      <button onClick={() => role("admin")}>Admin Home Sector</button>
+      <button onClick={() => role("user")}>User Home Sector</button>
+    </div>
+  );
 };
 
 export default Home;

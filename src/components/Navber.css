@@ -1,0 +1,22 @@
+ul
+{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    color: #000;
+    text-decoration: none;
+    
+    font-size: larger;
+}
+

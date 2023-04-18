@@ -1,9 +1,10 @@
 import React from "react"
+import './Navber.css'
 
 const Navbar = () => {
     return (
         <>
-            <ul>
+            <ul className="navlink">
                 <li><a href={'/'}>Home</a></li>
                 <li><a href={'/owner'}>Owner</a></li>
             </ul>
