@@ -40,8 +40,8 @@ const Admin = () => {
 
   return (
     <>
-    <div className="admin-container">
       <h2>Create User Here</h2>
+    <div className="admin-container">
       <form>
         <input
           onChange={(event) => setName(event.target.value)}
@@ -91,7 +91,7 @@ const Admin = () => {
                 <td>{list.lastname}</td>
                 <td>{list.position}</td>
                 <td>
-                  <button onClick={() => remove(list.id)}>Delate</button>
+                  <button onClick={() => remove(list.id)} className="btn-delate">Delate</button>
                 </td>
               </tr>
             );

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import React from "react";
 import { DataContext } from "./util/Context";
+import '../style/User.css'
 
 const User = () => {
   //set variable from Context

@@ -17,13 +17,21 @@ section
     justify-content: center;
 
 }
+h1
+{
+    padding: 1rem;
+}
+
 .btn-role 
 {
     display: flex;
     gap: 4rem;
+    padding: 1rem;
 }
 .btn-role button
 {
     font-size: large;
     border-radius: 5px;
+    padding: 0.5rem;
 }
+
