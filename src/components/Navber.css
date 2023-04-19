@@ -3,6 +3,11 @@ navbar
     background-color: azure;
     display: flex;
     justify-content: end;
+
+    width: 100%;
+
+    border-bottom:1px solid rgba(0, 0, 0, 0.5) ;
+    /* position: fixed; */
 }
 
 ul

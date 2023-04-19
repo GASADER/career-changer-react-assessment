@@ -7,8 +7,10 @@ import "./Owner.css";
     const Owner = () => {
         //add variable style
         const style = {
-            width:'40%', 
-            height:'auto'
+            width:'20%', 
+            height:'auto',
+            borderRadius: '50px'
+
         }
 
         return(
