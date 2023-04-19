@@ -1,9 +1,17 @@
+navbar
+{
+    background-color: azure;
+    display: flex;
+    justify-content: end;
+}
+
 ul
 {
+    margin: 0;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: end;
+    
     gap: 1rem;
 }
 
@@ -18,5 +26,17 @@ a
     text-decoration: none;
     
     font-size: larger;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    border: 2px solid ;
+}
+a:hover
+{
+    color: #fff;
+    background-color: black;
+    transform: scale(1.2);
+    border: 2px solid #fff;
+
 }
 
