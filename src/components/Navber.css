@@ -1,6 +1,6 @@
 navbar
 {
-    background-color: azure;
+    background-color: #007bff;
     display: flex;
     justify-content: end;
 
@@ -27,21 +27,22 @@ li
 
 a
 {
-    color: #000;
+    background-color: #007bff;
+    color: #f8f9fa;
     text-decoration: none;
     
     font-size: larger;
     padding: 0.5rem 1rem;
     border-radius: 10px;
 
-    border: 2px solid ;
+    border: 2px solid #f8f9fa;
 }
 a:hover
 {
-    color: #fff;
-    background-color: black;
+    color: #007bff;
+    background-color: #f8f9fa;
     transform: scale(1.2);
-    border: 2px solid #fff;
-
+    
+    border: 2px solid #007bff;
 }
 

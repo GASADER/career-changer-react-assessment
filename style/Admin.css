@@ -29,6 +29,7 @@ input
 {
     font-size: medium;
     padding: 0.5rem;
+    width: 16rem;
 }
 
 table
@@ -36,6 +37,12 @@ table
     margin: 1rem;
     padding: 1rem;
     border-collapse: collapse;
+    font-size: medium;
+
+}
+thead
+{
+    background-color: #17a2b8;
 }
 
 th,td
@@ -43,17 +50,42 @@ th,td
     border: 1px solid;
     padding:0.5rem 4rem;
 }
+.btn-save
+{
+    font-size: medium;
+    padding:0.25rem 1rem;
+    background-color: #28a745;
+    color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #343a40;
+
+}
+.btn-save:hover
+{
+    background-color: #f8f9fa;
+    color: #28a745;
+    border: 1px solid #28a745;
+    
+}
 
 .btn-delate
 {
+    font-size: medium;
     padding:0.25rem 1rem;
-    color: #fff;
-    background-color: red;
+    color: #f8f9fa;
+    background-color: #dc3545;
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #343a40;
+
+
 }
 
 .btn-delate:hover
 {
-    color: red;
-    background-color: white;
+    color: #dc3545;
+    background-color: #f8f9fa;
+    border: 1px solid #dc3545;
+
 }

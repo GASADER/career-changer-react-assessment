@@ -71,6 +71,7 @@ const Admin = () => {
               position: position,
             })
           }
+        className="btn-save"
         >SAVE</button>
       </form>
       <table>
