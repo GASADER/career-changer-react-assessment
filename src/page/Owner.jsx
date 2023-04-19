@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/navber";
+import Navbar from "../components/Navber";
 import img from "../img/IMG_20230302_091947.jpg"
 import "./Owner.css";
 

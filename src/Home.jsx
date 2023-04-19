@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Admin from "./Admin";
 import User from "./User";
-import Navbar from "./components/navber";
+import Navbar from "./components/Navber";
 import './components/Navber.css'
 import '../style/Home.css'
 import { DataContext } from "./util/Context";

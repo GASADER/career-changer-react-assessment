@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { DataContext } from "./util/Context";
+import '../style/Admin.css'
 
 const Admin = () => {
   //set State for input data
@@ -38,7 +39,8 @@ const Admin = () => {
   };
 
   return (
-    <div>
+    <>
+    <div className="admin-container">
       <h2>Create User Here</h2>
       <form>
         <input
@@ -97,6 +99,7 @@ const Admin = () => {
         </tbody>
       </table>
     </div>
+    </>
   );
 };
 
