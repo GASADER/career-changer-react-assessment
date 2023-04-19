@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { useState } from "react";
 import Admin from "./Admin";
 import User from "./User";
 import Navbar from "./components/navber";
@@ -36,25 +36,25 @@ const Home = () => {
   // state for data
   const [employees, setEmployees] = useState(mockEmployees);
 
-  //
+  //function for change role
   const role = (value) => {
     setSector(value);
   };
 
-  //set variable for change content
+  //set variable and condition for change content
   let info;
   let content;  
 
   if (sector === "admin") {
-    content = <Admin />;
-    info = <h1>Generation Thailand <br/> Home - Admin Sector</h1>
+    content = <Admin/>;
+    info = <h1>Home - Admin Sector</h1>
   } 
   else if (sector === "user") {
-    content = <User />;
-    info = <h1>Generation Thailand <br/> Home - User Sector</h1>
+    content = <User/>;
+    info = <h1>Home - User Sector</h1>
   } 
   else {
-    info = <h1>Generation Thailand <br/> React - Assessment</h1>;
+    info = <h1>React - Assessment</h1>;
   } 
 
   return (
@@ -62,12 +62,13 @@ const Home = () => {
     <DataContext.Provider value={{employees, setEmployees}}>
       <Navbar/>
       <section>
-      {info}
-      <div className="btn-role">
-        <button onClick={() => role("user")}>User Home Sector</button>
-        <button onClick={() => role("admin")}>Admin Home Sector</button>
-      </div>
-      {content}
+        <h1>Generation Thailand</h1>
+        {info}
+          <div className="btn-role">
+            <button onClick={() => role("user")}>User Home Sector</button>
+            <button onClick={() => role("admin")}>Admin Home Sector</button>
+          </div>
+        {content}
       </section>
     </DataContext.Provider>
   );
